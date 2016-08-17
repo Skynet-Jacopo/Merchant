@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Merchant</string>
+    <string name="user_name">用户名</string>
+    <string name="pass_word">密码</string>
+    <string name="next_move">下一步</string>
+    <string name="get_auth_code">获取验证码</string>
+    <string name="phone_number">手机号</string>
+    <string name="auth_code1">验证码</string>
+    <string name="auth_code">验证码</string>
+    <string name="please_input_account">请输入账号</string>
+    <string name="reset_complete">重置完成</string>
+</resources>

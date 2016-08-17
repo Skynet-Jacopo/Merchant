@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MerchantRegisterActivity3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:orientation="vertical">
+
+        <cn.usmaker.merchant.components.HMActionBar
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </cn.usmaker.merchant.components.HMActionBar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="按照国家有关部门规定，开店请提交营业执照信息,否则无法完成开店。"/>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:layout_marginRight="@dimen/base_padding"
+                    android:layout_marginTop="@dimen/base_padding"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="    注册号"
+                        android:textColor="@color/dark"
+                        android:textSize="17sp"/>
+
+                    <EditText
+                        android:id="@+id/edt_register_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/base_padding"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请填写您的注册号"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="16sp">
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:layout_marginRight="@dimen/base_padding"
+                    android:background="@color/darkgrey"
+                    android:paddingRight="@dimen/base_padding"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:layout_marginRight="@dimen/base_padding"
+                    android:layout_marginTop="@dimen/base_padding"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="执照名称"
+                        android:textColor="@color/dark"
+                        android:textSize="17sp"/>
+
+                    <EditText
+                        android:id="@+id/edt_license_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/base_padding"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请填写您的执照名称"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="16sp">
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="@dimen/base_padding"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:layout_marginRight="@dimen/base_padding"
+                    android:background="@color/darkgrey"
+                    android:paddingRight="@dimen/base_padding"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/base_padding"
+                    android:text="营业执照上传"
+                    android:textColor="@color/dark"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/darkgrey"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_business_license_pic"
+                        android:src="@drawable/icon_phone"
+                        android:background="@drawable/photo_dashed"
+                        android:layout_width="350px"
+                        android:layout_height="200px"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="900px"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/base_padding"
+                    android:text="身份证上传"
+                    android:textColor="@color/dark"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/darkgrey"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_identity_card_front"
+                        android:layout_margin="100px"
+                        android:src="@drawable/icon_phone"
+                        android:background="@drawable/photo_dashed"
+                        android:layout_width="350px"
+                        android:layout_height="200px"
+                        android:layout_gravity="center_horizontal"/>
+                    <View
+                        android:layout_marginRight="@dimen/base_padding"
+                        android:layout_marginLeft="@dimen/base_padding"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/darkgrey"/>
+                    <ImageView
+                        android:id="@+id/iv_identity_card_back"
+                        android:layout_margin="100px"
+                        android:src="@drawable/icon_phone"
+                        android:background="@drawable/photo_dashed"
+                        android:layout_width="350px"
+                        android:layout_height="200px"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/tv_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="我已经阅读并同意《平台相关客户协议》。"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register_completed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="@dimen/base_padding"
+            android:background="@drawable/button_next_move"
+            android:text="注册完成"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

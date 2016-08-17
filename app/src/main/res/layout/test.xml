@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="900px"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/base_padding"
+                android:text="身份证上传"
+                android:textColor="@color/dark"
+                android:textSize="17sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/darkgrey"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_margin="100px"
+                    android:src="@drawable/icon_phone"
+                    android:background="@drawable/photo_dashed"
+                    android:layout_width="350px"
+                    android:layout_height="200px"
+                    android:layout_gravity="center_horizontal"/>
+                <View
+                    android:layout_marginRight="@dimen/base_padding"
+                    android:layout_marginLeft="@dimen/base_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/darkgrey"/>
+                <ImageView
+                    android:layout_margin="100px"
+                    android:src="@drawable/icon_phone"
+                    android:background="@drawable/photo_dashed"
+                    android:layout_width="350px"
+                    android:layout_height="200px"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

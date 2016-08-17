@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "cn.usmaker.merchant"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:design:23.4.0'
+    // ButterKnife
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.zhy:autolayout:1.4.3'
+    compile 'com.github.GrenderG:Prefs:1.1'
+    //选择器(三级联动)
+    compile 'cn.qqtheme.framework:AndroidPicker:latest.integration'
+    compile 'com.alibaba:fastjson:1.1.46.android'
+
+    compile 'cn.finalteam:galleryfinal:1.4.3'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+}

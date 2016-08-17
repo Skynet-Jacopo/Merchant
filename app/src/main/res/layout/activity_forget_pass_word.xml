@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.usmaker.merchant.ForgetPassWordActivity">
+
+    <cn.usmaker.merchant.components.HMActionBar
+        android:id="@+id/actionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </cn.usmaker.merchant.components.HMActionBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_input_account"
+            android:textColor="@color/dark"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/edt_account_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:singleLine="true"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/darkgrey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="        验证码"
+            android:textColor="@color/dark"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edt_auth_code"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:singleLine="true"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/darkgrey"/>
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_showCode"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/darkgrey"/>
+    <Button
+        android:id="@+id/btn_next_move"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/button_next_move"
+        android:layout_marginTop="@dimen/base_padding"
+        android:layout_marginLeft="8dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="@string/next_move"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

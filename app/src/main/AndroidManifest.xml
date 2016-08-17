@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.usmaker.merchant">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".MerchantApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+        </activity>
+
+        <meta-data
+            android:name="design_width"
+            android:value="720"/>
+        <meta-data
+            android:name="design_height"
+            android:value="1280"/>
+
+        <activity android:name=".ForgetPassWordActivity">
+        </activity>
+        <activity android:name=".RegisterLoginActivity">
+        </activity>
+        <activity android:name=".VerifyPhoneNumberActivity">
+        </activity>
+        <activity android:name=".ResetPassWordActivity">
+        </activity>
+        <activity android:name=".MerchantRegisterActivity1">
+        </activity>
+        <activity android:name=".MerchantRegisterActivity2">
+
+        </activity>
+        <activity android:name=".MerchantRegisterActivity3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
