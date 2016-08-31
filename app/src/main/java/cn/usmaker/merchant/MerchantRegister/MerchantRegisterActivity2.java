@@ -1,4 +1,4 @@
-package cn.usmaker.merchant;
+package cn.usmaker.merchant.merchantRegister;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,10 +15,14 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.qqtheme.framework.picker.AddressPicker;
+import cn.usmaker.merchant.R;
 import cn.usmaker.merchant.commons.ActivityUtils;
 import cn.usmaker.merchant.commons.AssetsUtils;
 import cn.usmaker.merchant.components.HMActionBar;
 
+/**
+ * 商家注册第二个界面
+ */
 public class MerchantRegisterActivity2 extends AppCompatActivity {
 
     @Bind(R.id.action_bar)

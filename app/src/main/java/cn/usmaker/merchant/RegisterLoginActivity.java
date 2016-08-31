@@ -9,9 +9,15 @@ import android.widget.LinearLayout;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.usmaker.merchant.merchantRegister.MerchantRegisterActivity1;
 import cn.usmaker.merchant.commons.ActivityUtils;
+import cn.usmaker.merchant.companyRegister.CompanyRegisterActivity1;
 import cn.usmaker.merchant.components.CircleImageView;
+import cn.usmaker.merchant.workerRegister.WorkerRegisterActivity1;
 
+/**
+ * 公司,工人,商家注册界面
+ */
 public class RegisterLoginActivity extends AppCompatActivity {
 
     @Bind(R.id.iv_logo)
@@ -54,9 +60,11 @@ public class RegisterLoginActivity extends AppCompatActivity {
                 break;
             case R.id.llayout_company_register:
                 mActivityUtils.showToast("公司注册");
+                mActivityUtils.startActivity(CompanyRegisterActivity1.class);
                 break;
             case R.id.llayout_worker_register:
                 mActivityUtils.showToast("工人注册");
+                mActivityUtils.startActivity(WorkerRegisterActivity1.class);
                 break;
         }
     }

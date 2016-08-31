@@ -13,6 +13,7 @@ import butterknife.OnClick;
 import cn.usmaker.merchant.commons.ActivityUtils;
 import cn.usmaker.merchant.components.Code;
 import cn.usmaker.merchant.components.HMActionBar;
+import cn.usmaker.merchant.forgetPassword.VerifyPhoneNumberActivity;
 
 /**
  * 找回密码界面

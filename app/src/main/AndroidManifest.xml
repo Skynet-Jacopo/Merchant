@@ -1,43 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="cn.usmaker.merchant">
+    package="cn.usmaker.merchant" >
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".MerchantApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".MerchantApplication"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        android:theme="@style/AppTheme" >
+        <activity android:name=".LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ForgetPassWordActivity" >
+        </activity>
+        <activity android:name=".RegisterLoginActivity" >
+        </activity>
+        <activity android:name=".forgetPassword.VerifyPhoneNumberActivity" >
+        </activity>
+        <activity android:name=".forgetPassword.ResetPassWordActivity" >
+        </activity>
+        <activity android:name=".merchantRegister.MerchantRegisterActivity1" >
+        </activity>
+        <activity android:name=".merchantRegister.MerchantRegisterActivity2" >
+        </activity>
+        <activity android:name=".merchantRegister.MerchantRegisterActivity3" >
+        </activity>
+        <activity android:name=".MerchantHomePagerActivity" >
         </activity>
 
         <meta-data
             android:name="design_width"
-            android:value="720"/>
+            android:value="720" />
         <meta-data
             android:name="design_height"
-            android:value="1280"/>
+            android:value="1280" />
 
-        <activity android:name=".ForgetPassWordActivity">
+        <activity android:name=".companyRegister.CompanyRegisterActivity1" >
         </activity>
-        <activity android:name=".RegisterLoginActivity">
+        <activity android:name=".companyRegister.CompanyRegisterActivity2" >
         </activity>
-        <activity android:name=".VerifyPhoneNumberActivity">
+        <activity android:name=".companyRegister.CompanyRegisterActivity3" >
         </activity>
-        <activity android:name=".ResetPassWordActivity">
+        <activity android:name=".workerRegister.WorkerRegisterActivity1" >
         </activity>
-        <activity android:name=".MerchantRegisterActivity1">
+        <activity android:name=".workerRegister.WorkerRegisterActivity2" >
         </activity>
-        <activity android:name=".MerchantRegisterActivity2">
-
-        </activity>
-        <activity android:name=".MerchantRegisterActivity3">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+        <activity android:name=".workerRegister.WorkerRegisterActivity3" >
         </activity>
     </application>
 

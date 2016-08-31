@@ -1,8 +1,9 @@
-package cn.usmaker.merchant;
+package cn.usmaker.merchant.companyRegister;
 
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -13,15 +14,14 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.zhy.autolayout.AutoLayoutActivity;
-
 import butterknife.Bind;
 import butterknife.BindColor;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.usmaker.merchant.R;
 import cn.usmaker.merchant.commons.ActivityUtils;
 
-public class MerchantRegisterActivity1 extends AutoLayoutActivity implements TextWatcher {
+public class CompanyRegisterActivity1 extends AppCompatActivity implements TextWatcher {
 
     @Bind(R.id.edt_phone_number)
     EditText  mEdtPhoneNumber;
@@ -51,7 +51,7 @@ public class MerchantRegisterActivity1 extends AutoLayoutActivity implements Tex
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mActivityUtils = new ActivityUtils(this);
-        setContentView(R.layout.activity_merchant_register);
+        setContentView(R.layout.activity_company_register);
         ButterKnife.bind(this);
         //透明状态栏
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
@@ -115,7 +115,7 @@ public class MerchantRegisterActivity1 extends AutoLayoutActivity implements Tex
                 public void onClick(View view) {
                     if (mEdtPassWord.getText().toString().trim().equals(mEdtPassWordAgain.getText()
                             .toString().trim())){
-                        mActivityUtils.startActivity(MerchantRegisterActivity2.class);
+                        mActivityUtils.startActivity(CompanyRegisterActivity2.class);
                     }else {
                         mActivityUtils.showToast("两次密码不一致,请重新输入");
                     }

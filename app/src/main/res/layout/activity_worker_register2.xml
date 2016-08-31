@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".merchantRegister.MerchantRegisterActivity2">
+    tools:context=".workerRegister.WorkerRegisterActivity2">
 
     <cn.usmaker.merchant.components.HMActionBar
         android:id="@+id/action_bar"
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="商家店铺名称"
+            android:text="请填入您的真实姓名"
             android:textColor="@color/dark"
             android:textSize="17sp"/>
 
@@ -38,7 +38,7 @@
             android:layout_marginLeft="@dimen/base_padding"
             android:background="@null"
             android:gravity="right|center_vertical"
-            android:hint="店铺名称"
+            android:hint="您的姓名"
             android:inputType="text"
             android:singleLine="true"
             android:textSize="16sp">
@@ -65,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="经营分类"
+            android:text="请选择工种"
             android:textColor="@color/dark"
             android:textSize="17sp"/>
 
@@ -190,7 +190,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="门店地址"
+            android:text="家庭住址"
             android:textColor="@color/dark"
             android:textSize="17sp"/>
 
